@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Circle.cs" />
     <Compile Include="Ellipse.cs" />
+    <Compile Include="IPersist.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

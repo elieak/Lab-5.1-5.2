@@ -1,13 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShapeLib
 {
-    class Circle : Ellipse
+    public class Circle : Ellipse
     {
+        public Circle(int rad, ConsoleColor color) : base(rad, rad, color) { }
+
+        public override void Display()
+        {
+            Console.BackgroundColor = Color;
+            Console.WriteLine($"The radius is {radius}");
+        }
 
     }
 }

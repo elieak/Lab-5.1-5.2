@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShapeLib
 {
     public abstract class Shape
     {
-        public ConsoleColor Color { get; set; }
+        protected ConsoleColor Color { get; }
 
         public abstract double Area { get; }
 
-        public Shape(ConsoleColor color)
+        protected Shape(ConsoleColor color)
         {
             Color = color;
         }
 
-        public Shape()
+        protected Shape()
         {
             Color = ConsoleColor.White;
         }
